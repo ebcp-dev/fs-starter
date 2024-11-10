@@ -1,9 +1,9 @@
-import Link from 'next/link';
-import styles from './index.module.scss';
+import Link from "next/link";
+import styles from "./landing.module.scss";
 
-export function Index() {
+export function Landing() {
   return (
-    <div className={styles['container']}>
+    <div className={styles["container"]}>
       <h1>
         <span> Hello there, </span>
         Welcome auth 👋
@@ -20,4 +20,4 @@ export function Index() {
   );
 }
 
-export default Index;
+export default Landing;
