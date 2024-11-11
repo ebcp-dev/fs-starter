@@ -2,11 +2,12 @@
 
 import { PropsWithChildren } from "react";
 import styles from "./header.module.scss";
+import { NavigationMenubar } from "./menubar";
 
 export function Header({ children }: PropsWithChildren) {
   return (
     <div className={styles["container"]}>
-      <h1>Header Component</h1>
+      <NavigationMenubar />
       {children}
     </div>
   );

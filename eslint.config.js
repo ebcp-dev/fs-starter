@@ -5,7 +5,14 @@ module.exports = [
   ...nx.configs["flat/typescript"],
   ...nx.configs["flat/javascript"],
   {
-    ignores: ["**/dist"],
+    ignores: [
+      "**/dist",
+      "node_modules",
+      "**/.next",
+      ".nx",
+      "**/jest.config.*",
+      "**/next.config.*",
+    ],
   },
   {
     files: ["**/*.ts", "**/*.tsx", "**/*.js", "**/*.jsx"],

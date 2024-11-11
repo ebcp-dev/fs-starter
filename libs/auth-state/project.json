@@ -1,10 +1,10 @@
 {
-  "name": "create-account",
+  "name": "auth-state",
   "$schema": "../../node_modules/nx/schemas/project-schema.json",
-  "sourceRoot": "libs/create-account/src",
+  "sourceRoot": "libs/auth-state/src",
   "projectType": "library",
   "tags": [],
-  "// targets": "to see all targets run: nx show project create-account --web",
+  "// targets": "to see all targets run: nx show project auth-state --web",
   "targets": {
     "lint": {
       "executor": "@nx/eslint:lint"

@@ -3,8 +3,10 @@
     "baseUrl": ".",
     "paths": {
       "@fs-starter/ui": ["libs/ui/src/index.ts"],
-      "@fs-starter/ui/*": ["libs/ui/src/*"]
-    },
-    "composite": true
+      "@fs-starter/ui/*": ["libs/ui/src/*"],
+      "@fs-starter/sign-in": ["libs/sign-in/src/index.ts"],
+      "@fs-starter/sign-in/server": ["libs/sign-in/src/server.ts"],
+      "@fs-starter/auth-state": ["libs/auth-state/src/index.ts"]
+    }
   }
 }
