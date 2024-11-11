@@ -1,0 +1,10 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@fs-starter/ui": ["libs/ui/src/index.ts"],
+      "@fs-starter/ui/*": ["libs/ui/src/*"]
+    },
+    "composite": true
+  }
+}

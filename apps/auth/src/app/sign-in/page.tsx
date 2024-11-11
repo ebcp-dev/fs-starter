@@ -1,5 +1,10 @@
-import { SignIn } from '@fs-starter/sign-in';
+import { SignIn } from "@fs-starter/sign-in";
+import { SignInServer } from "@fs-starter/sign-in/server";
 
 export default function SignInPage() {
-  return <SignIn />;
+  return (
+    <SignIn>
+      <SignInServer />
+    </SignIn>
+  );
 }

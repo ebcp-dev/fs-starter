@@ -3,7 +3,7 @@
   "compilerOptions": {
     "rootDir": ".",
     "sourceMap": true,
-    "declaration": false,
+    "declaration": true,
     "moduleResolution": "node",
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
@@ -14,6 +14,7 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
+    "composite": true,
     "paths": {
       "@fs-starter/create-account": ["libs/create-account/src/index.ts"],
       "@fs-starter/create-account/server": [
@@ -24,7 +25,8 @@
       "@fs-starter/layout": ["libs/layout/src/index.ts"],
       "@fs-starter/layout/server": ["libs/layout/src/server.ts"],
       "@fs-starter/sign-in": ["libs/sign-in/src/index.ts"],
-      "@fs-starter/sign-in/server": ["libs/sign-in/src/server.ts"]
+      "@fs-starter/sign-in/server": ["libs/sign-in/src/server.ts"],
+      "@fs-starter/ui": ["libs/ui/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]
