@@ -1,5 +1,10 @@
-import { Index } from '@fs-starter/index';
+import { Landing } from "@fs-starter/landing";
+import { LandingServer } from "@fs-starter/landing/server";
 
-export default function IndexPage() {
-  return <Index />;
+export default function LandingPage() {
+  return (
+    <Landing>
+      <LandingServer />
+    </Landing>
+  );
 }

@@ -1,10 +1,10 @@
 import { render } from '@testing-library/react';
 
-import Index from './index';
+import Landing from './landing';
 
-describe('Index', () => {
+describe('Landing', () => {
   it('should render successfully', () => {
-    const { baseElement } = render(<Index />);
+    const { baseElement } = render(<Landing />);
     expect(baseElement).toBeTruthy();
   });
 });
