@@ -10,6 +10,6 @@
   },
   "aliases": {
     "components": "@fs-starter/ui/components",
-    "utils": "@fs-starter/ui/utils"
+    "utils": "@fs-starter/utils"
   }
 }

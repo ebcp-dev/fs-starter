@@ -1,0 +1,13 @@
+{
+  "name": "@fs-starter/utils",
+  "version": "0.0.1",
+  "dependencies": {
+    "tslib": "^2.3.0",
+    "clsx": "^2.1.1",
+    "tailwind-merge": "^2.5.4"
+  },
+  "type": "commonjs",
+  "main": "./src/index.js",
+  "typings": "./src/index.d.ts",
+  "private": true
+}

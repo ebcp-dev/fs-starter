@@ -165,6 +165,9 @@ importers:
       jest-environment-jsdom:
         specifier: ^29.7.0
         version: 29.7.0
+      jest-environment-node:
+        specifier: ^29.7.0
+        version: 29.7.0
       jsdom:
         specifier: ~22.1.0
         version: 22.1.0
