@@ -1,5 +1,4 @@
-import { CreateAccount } from "@fs-starter/create-account";
-import { CreateAccountServer } from "@fs-starter/create-account/server";
+import { CreateAccount, CreateAccountServer } from "../../lib/create-account";
 
 export default function CreateAccountPage() {
   return (

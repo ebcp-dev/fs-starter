@@ -3,7 +3,7 @@ import { Footer, Header } from "@fs-starter/layout/server";
 
 export const metadata = {
   title: "auth",
-  description: "Authentication web app",
+  description: "Authenticate to access more features",
 };
 
 export default function RootLayout({
