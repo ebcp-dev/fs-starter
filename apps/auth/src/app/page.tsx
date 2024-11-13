@@ -1,5 +1,5 @@
-import { Landing } from "@fs-starter/landing";
-import { LandingServer } from "@fs-starter/landing/server";
+import Landing from "../lib/landing/landing";
+import { LandingServer } from "../lib/landing/landing-server";
 
 export default function LandingPage() {
   return (

@@ -1,5 +1,4 @@
-import { SignIn } from "@fs-starter/sign-in";
-import { SignInServer } from "@fs-starter/sign-in/server";
+import { SignIn, SignInServer } from "../../lib/sign-in";
 
 export default function SignInPage() {
   return (
