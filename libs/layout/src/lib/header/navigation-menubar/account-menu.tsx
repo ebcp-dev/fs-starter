@@ -1,11 +1,6 @@
 "use client";
 
-import {
-  MenubarContent,
-  MenubarItem,
-  MenubarMenu,
-  MenubarTrigger,
-} from "@fs-starter/ui";
+import { MenubarContent, MenubarItem, MenubarTrigger } from "@fs-starter/ui";
 import { useAuthStore } from "@fs-starter/auth-state";
 import { PropsWithChildren } from "react";
 import Link from "next/link";
@@ -15,7 +10,7 @@ export function AccountMenu({ children }: PropsWithChildren) {
   const isSignedIn = !!authStore.accountInfo;
 
   return (
-    <MenubarMenu>
+    <>
       <MenubarTrigger style={{ marginLeft: "auto" }}>Account</MenubarTrigger>
       <MenubarContent>
         {children}
@@ -36,6 +31,6 @@ export function AccountMenu({ children }: PropsWithChildren) {
           </MenubarItem>
         )}
       </MenubarContent>
-    </MenubarMenu>
+    </>
   );
 }

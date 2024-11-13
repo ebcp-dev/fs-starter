@@ -1,7 +1,8 @@
+"use client";
+
 import {
   MenubarContent,
   MenubarItem,
-  MenubarMenu,
   MenubarShortcut,
   MenubarSub,
   MenubarSubContent,
@@ -11,7 +12,7 @@ import {
 
 export function ProjectsMenu() {
   return (
-    <MenubarMenu>
+    <>
       <MenubarTrigger>Projects</MenubarTrigger>
       <MenubarContent>
         <MenubarSub>
@@ -26,6 +27,6 @@ export function ProjectsMenu() {
           New <MenubarShortcut>⌘N</MenubarShortcut>
         </MenubarItem>
       </MenubarContent>
-    </MenubarMenu>
+    </>
   );
 }

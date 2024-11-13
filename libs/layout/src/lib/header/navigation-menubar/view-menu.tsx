@@ -1,8 +1,9 @@
+"use client";
+
 import {
   MenubarCheckboxItem,
   MenubarContent,
   MenubarItem,
-  MenubarMenu,
   MenubarSeparator,
   MenubarShortcut,
   MenubarTrigger,
@@ -10,7 +11,7 @@ import {
 
 export function ViewMenu() {
   return (
-    <MenubarMenu>
+    <>
       <MenubarTrigger>View</MenubarTrigger>
       <MenubarContent>
         <MenubarCheckboxItem>Always Show Bookmarks Bar</MenubarCheckboxItem>
@@ -27,6 +28,6 @@ export function ViewMenu() {
         <MenubarSeparator />
         <MenubarItem inset>Hide Sidebar</MenubarItem>
       </MenubarContent>
-    </MenubarMenu>
+    </>
   );
 }
