@@ -1,3 +1,3 @@
 // Use this file to export React server components
-export { FooterServer, Footer } from "./lib/footer";
-export { HeaderServer, Header } from "./lib/header";
+export { Footer } from "./lib/footer";
+export { Header } from "./lib/header";

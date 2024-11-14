@@ -1,42 +1,21 @@
-"use client";
+import AuthLinks from "./auth-links";
 
-import Link from "next/link";
-import styles from "./landing.module.scss";
-import { PropsWithChildren } from "react";
-import {
-  NavigationMenu,
-  NavigationMenuItem,
-  NavigationMenuLink,
-  NavigationMenuList,
-  navigationMenuTriggerStyle,
-} from "@fs-starter/ui";
-
-export function Landing({ children }: PropsWithChildren) {
+export function Landing() {
   return (
-    <div className={styles["container"]}>
-      <h1>
-        <span> Hello there, </span>
-        Welcome auth 👋
-      </h1>
-      <NavigationMenu>
-        <NavigationMenuList>
-          <NavigationMenuItem>
-            <Link href="/sign-in" legacyBehavior passHref>
-              <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-                Sign In
-              </NavigationMenuLink>
-            </Link>
-          </NavigationMenuItem>
-          <NavigationMenuItem>
-            <Link href="/create-account" legacyBehavior passHref>
-              <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-                Create Account
-              </NavigationMenuLink>
-            </Link>
-          </NavigationMenuItem>
-        </NavigationMenuList>
-      </NavigationMenu>
-      {children}
+    <div
+      className="relative h-screen w-full bg-cover bg-center"
+      style={{ backgroundImage: "url(/images/landing-bg.jpg)" }}
+    >
+      <div className="absolute inset-0 bg-black opacity-50"></div>
+      <div className="relative z-10 flex items-center justify-center h-full text-white">
+        <div className="text-center px-6 md:px-12">
+          <h1 className="text-4xl md:text-5xl font-bold mb-4">Auth</h1>
+          <p className="text-xl mb-6">
+            A secure and simple way to manage your account.
+          </p>
+          <AuthLinks />
+        </div>
+      </div>
     </div>
   );
 }

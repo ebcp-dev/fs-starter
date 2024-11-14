@@ -1,5 +1,3 @@
-"use client";
-
 import { Button } from "@fs-starter/ui";
 import Link from "next/link";
 import { HomeIcon } from "@radix-ui/react-icons";

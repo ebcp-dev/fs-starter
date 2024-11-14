@@ -1,5 +1,3 @@
-"use client";
-
 import {
   MenubarCheckboxItem,
   MenubarContent,

@@ -1,4 +1,2 @@
-// Use this file to export React client components (e.g. those with 'use client' directive) or other non-server utilities
-
-export { Footer } from './lib/footer';
-export { Header } from './lib/header';
+export { Footer } from "./lib/footer";
+export { Header } from "./lib/header";
