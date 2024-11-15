@@ -11,23 +11,25 @@ export function AccountMenu({ children }: PropsWithChildren) {
 
   return (
     <>
-      <MenubarTrigger style={{ marginLeft: "auto" }}>Account</MenubarTrigger>
+      <MenubarTrigger>
+        <Link href="#">{isSignedIn ? "Account" : "Sign In"}</Link>
+      </MenubarTrigger>
       <MenubarContent>
         {children}
         {isSignedIn ? (
           <>
-            <Link href="#">
-              <MenubarItem>Settings</MenubarItem>
-            </Link>
-            <Link href="#">
-              <MenubarItem>Sign Out</MenubarItem>
-            </Link>
+            <MenubarItem>
+              <Link href="#">Settings</Link>
+            </MenubarItem>
+            <MenubarItem>
+              <Link href="#">Sign Out</Link>
+            </MenubarItem>
           </>
         ) : (
           <MenubarItem>
-            <Link href="/sign-in">
-              <MenubarItem>Sign In or Create Account</MenubarItem>
-            </Link>
+            <MenubarItem>
+              <Link href="/sign-in">Sign In or Create Account</Link>
+            </MenubarItem>
           </MenubarItem>
         )}
       </MenubarContent>

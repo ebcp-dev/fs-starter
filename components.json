@@ -6,7 +6,7 @@
     "config": "apps/auth/tailwind.config.js",
     "css": "apps/auth/app/global.css",
     "baseColor": "stone",
-    "cssVariables": true
+    "cssVariables": false
   },
   "aliases": {
     "components": "@fs-starter/ui/components",

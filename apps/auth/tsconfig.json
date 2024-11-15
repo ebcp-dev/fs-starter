@@ -27,7 +27,8 @@
     "../../dist/apps/auth/.next/types/**/*.ts",
     "next-env.d.ts",
     ".next/types/**/*.ts",
-    "../../eslint.config.js"
+    "../../eslint.config.js",
+    "../../libs/layout"
   ],
   "exclude": ["node_modules", "jest.config.ts", "**/*.spec.ts", "**/*.test.ts"]
 }

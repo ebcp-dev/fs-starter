@@ -3,7 +3,7 @@ import { PropsWithChildren } from "react";
 
 export function CreateAccount({ children }: PropsWithChildren) {
   return (
-    <div className={`${styles["container"]} h-screen`}>
+    <div className={`${styles["create-account"]} h-screen`}>
       <h1>Create Account Page</h1>
       {children}
     </div>
