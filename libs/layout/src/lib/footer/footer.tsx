@@ -1,7 +1,8 @@
 import Link from "next/link";
 import styles from "./footer.module.scss";
+import { FC } from "react";
 
-export function Footer() {
+export const Footer: FC = () => {
   return (
     <footer
       className={`${styles["footer"]} border-t border-border/40 py-6 dark:border-border md:px-8 md:py-0`}
@@ -31,6 +32,6 @@ export function Footer() {
       </div>
     </footer>
   );
-}
+};
 
 export default Footer;

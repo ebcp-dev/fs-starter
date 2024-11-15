@@ -1,6 +1,7 @@
+import { FC } from "react";
 import AuthLinks from "./auth-links";
 
-export function Landing() {
+export const Landing: FC = () => {
   return (
     <div
       className="relative h-screen w-full bg-cover bg-center"
@@ -18,6 +19,4 @@ export function Landing() {
       </div>
     </div>
   );
-}
-
-export default Landing;
+};

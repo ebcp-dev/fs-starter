@@ -1,8 +1,8 @@
 import { Button } from "@fs-starter/ui";
 import Link from "next/link";
-import * as React from "react";
+import { FC } from "react";
 
-export function AuthLinks() {
+const AuthLinks: FC = () => {
   return (
     <>
       <Link href="/sign-in">
@@ -17,6 +17,6 @@ export function AuthLinks() {
       </Link>
     </>
   );
-}
+};
 
 export default AuthLinks;

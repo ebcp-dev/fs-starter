@@ -8,8 +8,9 @@ import {
   MenubarShortcut,
   MenubarTrigger,
 } from "@fs-starter/ui";
+import { FC } from "react";
 
-export function ViewMenu() {
+export const ViewMenu: FC = () => {
   return (
     <>
       <MenubarTrigger>View</MenubarTrigger>
@@ -30,4 +31,4 @@ export function ViewMenu() {
       </MenubarContent>
     </>
   );
-}
+};

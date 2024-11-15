@@ -1,5 +1,8 @@
-import Landing from "../lib/landing/landing";
+import { FC } from "react";
+import { Landing } from "../lib/landing";
 
-export default function LandingPage() {
+const LandingPage: FC = () => {
   return <Landing />;
-}
+};
+
+export default LandingPage;

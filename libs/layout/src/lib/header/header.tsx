@@ -3,12 +3,13 @@ import {
   ProjectsMenu,
   ViewMenu,
   AccountMenu,
-  ModeToggle,
+  ThemeToggle,
 } from "./menu-items";
 import styles from "./header.module.scss";
 import { Menubar, MenubarMenu } from "@fs-starter/ui";
+import { FC } from "react";
 
-export function Header() {
+export const Header: FC = () => {
   return (
     <div className={`${styles["header"]} sticky top-0 z-50`}>
       <div className="flex justify-between w-full">
@@ -30,7 +31,7 @@ export function Header() {
             }}
           >
             <MenubarMenu>
-              <ModeToggle />
+              <ThemeToggle />
             </MenubarMenu>
             <MenubarMenu>
               <AccountMenu />
@@ -40,6 +41,6 @@ export function Header() {
       </div>
     </div>
   );
-}
+};
 
 export default Header;

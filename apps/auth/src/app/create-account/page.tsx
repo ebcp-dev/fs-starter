@@ -1,5 +1,8 @@
+import { FC } from "react";
 import { CreateAccount } from "../../lib/create-account";
 
-export default function CreateAccountPage() {
+const CreateAccountPage: FC = () => {
   return <CreateAccount />;
-}
+};
+
+export default CreateAccountPage;

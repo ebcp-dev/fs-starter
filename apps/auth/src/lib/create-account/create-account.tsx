@@ -1,13 +1,11 @@
 import styles from "./create-account.module.scss";
-import { PropsWithChildren } from "react";
+import { FC, PropsWithChildren } from "react";
 
-export function CreateAccount({ children }: PropsWithChildren) {
+export const CreateAccount: FC<PropsWithChildren> = ({ children }) => {
   return (
     <div className={`${styles["create-account"]} h-screen`}>
       <h1>Create Account Page</h1>
       {children}
     </div>
   );
-}
-
-export default CreateAccount;
+};

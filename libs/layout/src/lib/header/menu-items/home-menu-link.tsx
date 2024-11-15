@@ -3,8 +3,9 @@
 import { Button } from "@fs-starter/ui";
 import Link from "next/link";
 import { HomeIcon } from "@radix-ui/react-icons";
+import { FC } from "react";
 
-export function HomeMenuLink() {
+export const HomeMenuLink: FC = () => {
   return (
     <Link href="/">
       <Button variant="link">
@@ -12,4 +13,4 @@ export function HomeMenuLink() {
       </Button>
     </Link>
   );
-}
+};

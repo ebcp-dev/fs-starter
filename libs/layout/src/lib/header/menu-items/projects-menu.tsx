@@ -9,8 +9,9 @@ import {
   MenubarSubTrigger,
   MenubarTrigger,
 } from "@fs-starter/ui";
+import { FC } from "react";
 
-export function ProjectsMenu() {
+export const ProjectsMenu: FC = () => {
   return (
     <>
       <MenubarTrigger>Projects</MenubarTrigger>
@@ -29,4 +30,4 @@ export function ProjectsMenu() {
       </MenubarContent>
     </>
   );
-}
+};

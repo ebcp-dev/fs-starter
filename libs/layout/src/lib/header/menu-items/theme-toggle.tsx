@@ -3,8 +3,9 @@
 import { useTheme } from "next-themes";
 import { MenubarContent, MenubarItem, MenubarTrigger } from "@fs-starter/ui";
 import { MoonIcon, SunIcon } from "@radix-ui/react-icons";
+import { FC } from "react";
 
-export function ModeToggle() {
+export const ThemeToggle: FC = () => {
   const { setTheme } = useTheme();
 
   return (
@@ -23,4 +24,4 @@ export function ModeToggle() {
       </MenubarContent>
     </>
   );
-}
+};

@@ -1,5 +1,8 @@
+import { FC } from "react";
 import { SignIn } from "../../lib/sign-in";
 
-export default function SignInPage() {
+const SignInPagePage: FC = () => {
   return <SignIn />;
-}
+};
+
+export default SignInPagePage;

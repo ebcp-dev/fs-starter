@@ -2,10 +2,10 @@
 
 import { MenubarContent, MenubarItem, MenubarTrigger } from "@fs-starter/ui";
 import { useAuthStore } from "@fs-starter/auth-state";
-import { PropsWithChildren } from "react";
+import { FC, PropsWithChildren } from "react";
 import Link from "next/link";
 
-export function AccountMenu({ children }: PropsWithChildren) {
+export const AccountMenu: FC<PropsWithChildren> = ({ children }) => {
   const authStore = useAuthStore();
   const isSignedIn = !!authStore.accountInfo;
 
@@ -35,4 +35,4 @@ export function AccountMenu({ children }: PropsWithChildren) {
       </MenubarContent>
     </>
   );
-}
+};
