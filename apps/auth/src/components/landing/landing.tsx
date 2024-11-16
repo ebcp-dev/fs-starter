@@ -1,15 +1,16 @@
 "use client";
 
 import { FC, useEffect, useState } from "react";
+import Image from "next/image";
 import AuthLinks from "./auth-links";
 import { useTheme } from "next-themes";
 
-const BG_IMG_DARK = "url(/images/landing-bg-dark.jpg)";
-const BG_IMG_LIGHT = "url(/images/landing-bg-light.jpg)";
+const BG_IMG_DARK = "/images/landing-bg-dark.jpg";
+const BG_IMG_LIGHT = "/images/landing-bg-light.jpg";
 
 export const Landing: FC = () => {
   const { resolvedTheme } = useTheme();
-  const [backgroundImage, setBackgroundImage] = useState("");
+  const [backgroundImage, setBackgroundImage] = useState(BG_IMG_DARK);
 
   // ensure the theme is resolved on the client
   useEffect(() => {
@@ -17,10 +18,15 @@ export const Landing: FC = () => {
   }, [resolvedTheme]);
 
   return (
-    <div
-      className="relative h-screen w-full bg-cover bg-center"
-      style={{ backgroundImage }}
-    >
+    <div className="relative h-screen w-full">
+      <Image
+        src={backgroundImage}
+        alt="Landing Background"
+        fill={true}
+        style={{ objectFit: "cover" }}
+        quality={80} // Compress the image
+        priority // Load the image immediately
+      />
       <div className="absolute inset-0 bg-black opacity-50"></div>
       <div className="relative z-10 flex items-center justify-center h-full text-white">
         <div className="text-center px-6 md:px-12">
