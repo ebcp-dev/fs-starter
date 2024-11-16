@@ -7,3 +7,5 @@ export const SignIn: FC<PropsWithChildren> = ({ children }) => (
     {children}
   </div>
 );
+
+export default SignIn;

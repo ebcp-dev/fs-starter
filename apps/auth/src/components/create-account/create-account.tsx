@@ -9,3 +9,5 @@ export const CreateAccount: FC<PropsWithChildren> = ({ children }) => {
     </div>
   );
 };
+
+export default CreateAccount;

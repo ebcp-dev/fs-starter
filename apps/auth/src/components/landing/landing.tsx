@@ -1,11 +1,25 @@
-import { FC } from "react";
+"use client";
+
+import { FC, useEffect, useState } from "react";
 import AuthLinks from "./auth-links";
+import { useTheme } from "next-themes";
+
+const BG_IMG_DARK = "url(/images/landing-bg-dark.jpg)";
+const BG_IMG_LIGHT = "url(/images/landing-bg-light.jpg)";
 
 export const Landing: FC = () => {
+  const { resolvedTheme } = useTheme();
+  const [backgroundImage, setBackgroundImage] = useState("");
+
+  // ensure the theme is resolved on the client
+  useEffect(() => {
+    setBackgroundImage(resolvedTheme === "light" ? BG_IMG_LIGHT : BG_IMG_DARK);
+  }, [resolvedTheme]);
+
   return (
     <div
       className="relative h-screen w-full bg-cover bg-center"
-      style={{ backgroundImage: "url(/images/landing-bg.jpg)" }}
+      style={{ backgroundImage }}
     >
       <div className="absolute inset-0 bg-black opacity-50"></div>
       <div className="relative z-10 flex items-center justify-center h-full text-white">
@@ -20,3 +34,5 @@ export const Landing: FC = () => {
     </div>
   );
 };
+
+export default Landing;

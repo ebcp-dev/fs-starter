@@ -14,7 +14,7 @@ import { FC } from "react";
 export const ProjectsMenu: FC = () => {
   return (
     <>
-      <MenubarTrigger>Projects</MenubarTrigger>
+      <MenubarTrigger className="cursor-pointer">Projects</MenubarTrigger>
       <MenubarContent>
         <MenubarSub>
           <MenubarSubTrigger>Recent</MenubarSubTrigger>

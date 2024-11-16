@@ -13,7 +13,7 @@ import { FC } from "react";
 export const ViewMenu: FC = () => {
   return (
     <>
-      <MenubarTrigger>View</MenubarTrigger>
+      <MenubarTrigger className="cursor-pointer">View</MenubarTrigger>
       <MenubarContent>
         <MenubarCheckboxItem>Always Show Bookmarks Bar</MenubarCheckboxItem>
         <MenubarCheckboxItem checked>Always Show Full URLs</MenubarCheckboxItem>

@@ -1,5 +1,5 @@
 import { FC } from "react";
-import { Landing } from "../lib/landing";
+import { Landing } from "../components/landing";
 
 const LandingPage: FC = () => {
   return <Landing />;

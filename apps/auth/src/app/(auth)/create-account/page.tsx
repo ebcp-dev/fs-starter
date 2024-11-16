@@ -1,5 +1,5 @@
 import { FC } from "react";
-import { CreateAccount } from "../../lib/create-account";
+import { CreateAccount } from "../../../components/create-account";
 
 const CreateAccountPage: FC = () => {
   return <CreateAccount />;
