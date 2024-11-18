@@ -2,8 +2,9 @@
 
 import { FC, useEffect, useState } from "react";
 import Image from "next/image";
-import AuthLinks from "./auth-links";
 import { useTheme } from "next-themes";
+
+import AuthLinks from "./auth-links";
 
 const BG_IMG_DARK = "/images/landing-bg-dark.jpg";
 const BG_IMG_LIGHT = "/images/landing-bg-light.jpg";

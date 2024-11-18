@@ -1,3 +1,8 @@
+"use client";
+
+import { Menubar, MenubarMenu } from "@fs-starter/ui";
+import { FC, useEffect, useState } from "react";
+
 import {
   HomeMenuLink,
   ProjectsMenu,
@@ -5,15 +10,30 @@ import {
   AccountMenu,
   ThemeToggle,
 } from "./menu-items";
-import styles from "./header.module.scss";
-import { Menubar, MenubarMenu } from "@fs-starter/ui";
-import { FC } from "react";
 
 export const Header: FC = () => {
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = (): void => {
+      setIsScrolled(window.scrollY > 0);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
-    <div className={`${styles["header"]} sticky top-0 z-50`}>
+    <div className="sticky top-0 z-50">
       <div className="flex justify-between w-full">
-        <Menubar className="flex-1 rounded-none">
+        <Menubar
+          className={`flex-1 rounded-none transition-colors duration-300 ${
+            isScrolled ? "bg-white/10 backdrop-blur" : "bg-transparent"
+          }`}
+        >
           <MenubarMenu>
             <HomeMenuLink />
           </MenubarMenu>

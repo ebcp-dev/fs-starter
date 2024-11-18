@@ -1,5 +1,6 @@
-import styles from "./create-account.module.scss";
 import { FC, PropsWithChildren } from "react";
+
+import styles from "./create-account.module.scss";
 
 export const CreateAccount: FC<PropsWithChildren> = ({ children }) => {
   return (

@@ -1,8 +1,9 @@
 import "./global.css";
-import { Footer, Header } from "@fs-starter/layout/server";
-import { ThemeProvider } from "@fs-starter/layout";
 import { FC, PropsWithChildren } from "react";
 import Head from "next/head";
+
+import { Footer, Header } from "@fs-starter/layout/server";
+import { ThemeProvider } from "@fs-starter/layout";
 
 export const metadata = {
   title: "auth",

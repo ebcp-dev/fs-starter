@@ -1,6 +1,7 @@
 import Link from "next/link";
-import styles from "./footer.module.scss";
 import { FC } from "react";
+
+import styles from "./footer.module.scss";
 
 export const Footer: FC = () => {
   return (

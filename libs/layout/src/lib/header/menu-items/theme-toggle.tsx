@@ -1,9 +1,9 @@
 "use client";
 
 import { useTheme } from "next-themes";
-import { MenubarContent, MenubarItem, MenubarTrigger } from "@fs-starter/ui";
 import { MoonIcon, SunIcon } from "@radix-ui/react-icons";
 import { FC } from "react";
+import { MenubarContent, MenubarItem, MenubarTrigger } from "@fs-starter/ui";
 
 export const ThemeToggle: FC = () => {
   const { setTheme } = useTheme();

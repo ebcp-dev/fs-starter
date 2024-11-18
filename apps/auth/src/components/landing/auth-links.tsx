@@ -1,20 +1,17 @@
-import { Button } from "@fs-starter/ui";
 import Link from "next/link";
 import { FC } from "react";
+
+import { Button } from "@fs-starter/ui";
 
 const AuthLinks: FC = () => {
   return (
     <>
-      <Link href="/sign-in">
-        <Button variant="ghost" className="text-lg m-1">
-          Sign In
-        </Button>
-      </Link>
-      <Link href="/create-account">
-        <Button variant="secondary" className="text-lg m-1">
-          Create Account
-        </Button>
-      </Link>
+      <Button variant="ghost" className="text-lg m-1" asChild>
+        <Link href="/sign-in">Sign In</Link>
+      </Button>
+      <Button variant="secondary" className="text-lg m-1" asChild>
+        <Link href="/create-account">Create Account</Link>
+      </Button>
     </>
   );
 };
