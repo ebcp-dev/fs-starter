@@ -2,8 +2,8 @@ import { FC } from "react";
 
 import { SignIn } from "../../../components/sign-in";
 
-const SignInPagePage: FC = () => {
+const SignInPage: FC = () => {
   return <SignIn />;
 };
 
-export default SignInPagePage;
+export default SignInPage;

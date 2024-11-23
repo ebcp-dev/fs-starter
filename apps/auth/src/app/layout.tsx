@@ -1,9 +1,10 @@
-import "./global.css";
-import { FC, PropsWithChildren } from "react";
 import Head from "next/head";
+import { FC, PropsWithChildren } from "react";
+import "./global.css";
 
-import { Footer, Header } from "@fs-starter/layout/server";
+import { AuthProvider } from "@fs-starter/auth-state";
 import { ThemeProvider } from "@fs-starter/layout";
+import { Footer, Header } from "@fs-starter/layout/server";
 
 export const metadata = {
   title: "auth",
@@ -19,16 +20,18 @@ const RootLayout: FC<PropsWithChildren> = ({ children }) => {
         <link rel="preload" href="./global.css" as="style" />
       </Head>
       <body>
-        <ThemeProvider
-          attribute="class"
-          defaultTheme="system"
-          enableSystem
-          disableTransitionOnChange
-        >
-          <Header />
-          {children}
-          <Footer />
-        </ThemeProvider>
+        <AuthProvider accountInfo={null}>
+          <ThemeProvider
+            attribute="class"
+            defaultTheme="system"
+            enableSystem
+            disableTransitionOnChange
+          >
+            <Header />
+            {children}
+            <Footer />
+          </ThemeProvider>
+        </AuthProvider>
       </body>
     </html>
   );

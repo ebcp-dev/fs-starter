@@ -55,10 +55,6 @@ module.exports = [
         { functions: false, classes: true, variables: true },
       ],
       "@typescript-eslint/no-non-null-assertion": "error",
-      "@typescript-eslint/explicit-function-return-type": [
-        "warn",
-        { allowExpressions: true },
-      ],
       "@typescript-eslint/explicit-member-accessibility": [
         "error",
         { accessibility: "explicit" },

@@ -31,7 +31,7 @@ export const Header: FC = () => {
       <div className="flex justify-between w-full">
         <Menubar
           className={`flex-1 rounded-none transition-colors duration-300 ${
-            isScrolled ? "bg-white/10 backdrop-blur" : "bg-transparent"
+            isScrolled ? "bg-white/10 backdrop-blur-0" : "bg-transparent"
           }`}
         >
           <MenubarMenu>

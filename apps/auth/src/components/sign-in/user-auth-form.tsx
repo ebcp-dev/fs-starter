@@ -8,9 +8,10 @@ import {
 } from "@radix-ui/react-icons";
 import { FC, HTMLAttributes, SyntheticEvent, useState } from "react";
 
-import { useAuthStore } from "@fs-starter/auth-state";
+import { useAuthContext } from "@fs-starter/auth-state";
 import { Button, Input, Label } from "@fs-starter/ui";
 import { cn } from "@fs-starter/utils";
+import { useRouter } from "next/navigation";
 
 type UserAuthFormProps = HTMLAttributes<HTMLDivElement>;
 
@@ -20,18 +21,25 @@ export const UserAuthForm: FC<UserAuthFormProps> = ({
 }) => {
   const [isLoading, setIsLoading] = useState<boolean>(false);
 
-  const { setAccountInfo } = useAuthStore();
+  const router = useRouter();
+
+  const setAccountInfo = useAuthContext((auth) => auth.setAccountInfo);
 
   const onSubmit = (event: SyntheticEvent): void => {
     event.preventDefault();
     setIsLoading(true);
 
     setTimeout(() => {
-      setAccountInfo({
+      const fakeAccount = {
         loginId: "test@test.email",
         name: "Test Account",
-      });
+      };
+
+      setAccountInfo(fakeAccount);
+
       setIsLoading(false);
+
+      router.push("/");
     }, 3000);
   };
 
